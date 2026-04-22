@@ -5,8 +5,9 @@ Fallback data artifacts for [NumericalEarth.jl](https://github.com/NumericalEart
 ## Purpose
 
 This repository stores test data files as GitHub Release assets. When the original data sources
-(Dropbox, NASA ECCO, ORNL ESGF, UK Met Office, NOAA NCEI, etc.) are temporarily unavailable,
-NumericalEarth.jl falls back to downloading from these artifacts so that CI tests continue to pass.
+(Dropbox, NASA ECCO, ORNL ESGF, UK Met Office, NOAA NCEI, Copernicus CDS, Copernicus Marine, etc.)
+are temporarily unavailable, NumericalEarth.jl falls back to downloading from these artifacts so
+that CI tests continue to pass.
 
 A warning annotation is emitted on the pull request whenever a fallback is used, so maintainers
 are aware which original links are broken.
@@ -31,6 +32,8 @@ https://github.com/NumericalEarth/NumericalEarthArtifacts/releases/download/data
 | EN4 | UK Met Office | `EN.4.2.2.f.analysis.g10.*.nc` |
 | ETOPO | Dropbox | `ETOPO_2022_v1_60s_N90W180_surface.nc` |
 | WOA | NOAA NCEI | `woa_{t,s}_annual.nc`, `woa_{t,s}_monthly_{01..12}.nc` |
+| ERA5 | Copernicus CDS | `{var}_ERA5Hourly_{start}_{end}[_bbox].nc` |
+| GLORYS | Copernicus Marine | `{thetao,so,uo,vo}_GLORYSDaily_{start}_{end}_{bbox}.nc` |
 
 ## Adding new files
 
