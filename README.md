@@ -5,9 +5,9 @@ Fallback data artifacts for [NumericalEarth.jl](https://github.com/NumericalEart
 ## Purpose
 
 This repository stores test data files as GitHub Release assets. When the original data sources
-(Dropbox, NASA ECCO, ORNL ESGF, UK Met Office, NOAA NCEI, Copernicus CDS, Copernicus Marine, etc.)
-are temporarily unavailable, NumericalEarth.jl falls back to downloading from these artifacts so
-that CI tests continue to pass.
+(Dropbox, NASA ECCO, ORNL ESGF, UK Met Office, NOAA NCEI, Copernicus CDS, Copernicus Marine,
+Zenodo, etc.) are temporarily unavailable, NumericalEarth.jl falls back to downloading from
+these artifacts so that CI tests continue to pass.
 
 A warning annotation is emitted on the pull request whenever a fallback is used, so maintainers
 are aware which original links are broken.
@@ -31,6 +31,7 @@ https://github.com/NumericalEarth/NumericalEarthArtifacts/releases/download/data
 | ECCO Darwin | NASA JPL | `*.data` |
 | EN4 | UK Met Office | `EN.4.2.2.f.analysis.g10.*.nc` |
 | ETOPO | Dropbox | `ETOPO_2022_v1_60s_N90W180_surface.nc` |
+| ORCA | Zenodo | `eORCA1.2_mesh_mask.nc`, `eORCA_R1_bathy_meter_v2.2.nc`, `grid_mask_eORCA12-GO6.nc`, `bathy_eORCA12_noclosea_from_GEBCO2021_FillZero_S21TT_CloseaCopy.nc` |
 | WOA | NOAA NCEI | `woa_{t,s}_annual.nc`, `woa_{t,s}_monthly_{01..12}.nc` |
 | ERA5 | Copernicus CDS | `{var}_ERA5Hourly_{start}_{end}[_bbox].nc` |
 | GLORYS | Copernicus Marine | `{thetao,so,uo,vo}_GLORYSDaily_{start}_{end}_{bbox}.nc` |
